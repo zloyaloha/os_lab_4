@@ -70,7 +70,7 @@ void loadDynamicLib(const bool contract) {
 void loadContract() {
     loadDynamicLib(mode);
     Pi = (ptr_pi)dlsym(libHandle, "Pi");
-    GCF = (ptr_gcf)dlsym(libHandle, "Pi");
+    GCF = (ptr_gcf)dlsym(libHandle, "GCF");
 }
 
 void changeContract(){
